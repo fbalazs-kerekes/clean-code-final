@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseService test Happy path should get all course from database 1`] = `
+[
+  Course {
+    "costInHuf": 10000,
+    "courseName": "CR1",
+    "lengthInWeeks": 5,
+    "startDate": 2024-01-01T00:00:00.000Z,
+    "students": [],
+  },
+  Course {
+    "costInHuf": 20000,
+    "courseName": "CR2",
+    "lengthInWeeks": 4,
+    "startDate": 2024-02-01T00:00:00.000Z,
+    "students": [],
+  },
+  Course {
+    "costInHuf": 30000,
+    "courseName": "CR3",
+    "lengthInWeeks": 3,
+    "startDate": 2024-03-01T00:00:00.000Z,
+    "students": [],
+  },
+]
+`;
+
+exports[`CourseService test Happy path should get course statistics for CR1 from database 1`] = `
+CourseStatistics {
+  "courseName": "CR1",
+  "lastAccessed": 2024-01-02T10:10:00.000Z,
+  "lecturesCompleted": 50,
+  "progress": 30,
+  "totalLectures": 100,
+}
+`;
+
+exports[`CourseService test Happy path should get course statistics for CR2 from database 1`] = `
+CourseStatistics {
+  "courseName": "CR2",
+  "lastAccessed": 2024-02-02T10:10:00.000Z,
+  "lecturesCompleted": 50,
+  "progress": 30,
+  "totalLectures": 200,
+}
+`;
+
+exports[`CourseService test Happy path should get course statistics for CR3 from database 1`] = `
+CourseStatistics {
+  "courseName": "CR3",
+  "lastAccessed": 2024-03-02T10:10:00.000Z,
+  "lecturesCompleted": 50,
+  "progress": 30,
+  "totalLectures": 150,
+}
+`;
